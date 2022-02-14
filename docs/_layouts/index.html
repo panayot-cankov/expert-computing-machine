@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ site.lang | default: " en-US" }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    </head>
+
+    <body style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+        <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch;">
+
+            <header style="flex: 1 1 0px">
+                <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+                <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+            </header>
+
+            <div style="margin: 1em 0em; flex: 1 1 0px; display: flex; flex-wrap: wrap; flex-direction: row;">
+                <nav style="margin: 1em 6em 1em 0em; width: 200px; border: 1px solid red;">
+                    <ul>
+                        <li><a href="./page1">Page 1</a></li>
+                        <li><a href="./page1">Page 1</a></li>
+                    </ul>
+                </nav>
+
+                <section style="margin: 1em 0em 1em 0em; max-width: 800px; border: 1px solid blue;">
+                    {{ content }}
+                    qwokdn qwdn qwkdn dmq;wlkdm dmdm qlwkdn fnrfndn qwkdn qwlkjdn qdnqwlkjd nqwlkjd nqlkwjnd 
+                </section>
+            </div>
+
+            <footer style="border-top: 1px solid black;">
+                <a href="https://github.com/telerik/call-home">GitHub Repo: github.com/telerik/call-home</a>
+            </footer>
+        </div>
+    </body>
+</html>
